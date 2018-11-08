@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.xd.iQueue.LinkQueue0" x="345" y="261">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.xd.iStack.LinkStack" x="173" y="256">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.xd.app.CardGame" x="269" y="111">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.xd.iStack.LinkStack"
+            endpointName="table" kind="Simple"/>
+        <Association destinationClassName="com.xd.iQueue.LinkQueue0"
+            endpointName="personA" kind="Simple"/>
+        <Communication destinationClassName="com.xd.iQueue.LinkQueue0"/>
+        <Communication destinationClassName="com.xd.iStack.LinkStack"/>
+    </Class>
+</ClassDiagram>
