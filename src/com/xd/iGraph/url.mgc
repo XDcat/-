@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.xd.iGraph.MGraph" x="62" y="121">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.xd.iGraph.IGraph"/>
+        <Association destinationClassName="com.xd.iGraph.GraphKind"
+            endpointName="kind" kind="Simple"/>
+        <Communication destinationClassName="com.xd.iGraph.GraphKind"/>
+    </Class>
+    <Class name="com.xd.iGraph.ALGraph" x="417" y="138">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.xd.iGraph.IGraph"/>
+        <Association destinationClassName="com.xd.iGraph.GraphKind"
+            endpointName="kind" kind="Simple"/>
+        <Association destinationClassName="com.xd.iGraph.VNode"
+            endpointName="vexs" kind="Simple"/>
+    </Class>
+    <Class name="com.xd.iGraph.GraphKind" x="276" y="156">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.xd.iGraph.IGraph" x="242" y="29">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.xd.iGraph.VNode" x="344" y="282">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.xd.iGraph.ArcNode"
+            endpointName="firstArc" kind="Simple"/>
+    </Class>
+    <Class name="com.xd.iGraph.ShortestPath" x="566" y="31">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.xd.iGraph.MGraph"/>
+    </Class>
+    <Class name="com.xd.iGraph.ArcNode" x="594" y="270">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.xd.iGraph.ArcNode"
+            endpointName="nextArc" kind="Simple"/>
+    </Class>
+</ClassDiagram>
