@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ClassDiagram>
+    <Class name="com.xd.bitree.postOrder" x="765" y="90">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.xd.bitree.Traverse"/>
+    </Class>
     <Class name="com.xd.bitree.preOrderNonRecursion" x="763" y="27">
         <AttributesDisplayFilter public-accepted="true"
             private-accepted="true" protected-accepted="true"
@@ -10,7 +20,7 @@
             accessors-accepted="false" constructors-accepted="false"/>
         <Extension destinationClassName="com.xd.bitree.Traverse"/>
     </Class>
-    <Class name="com.xd.bitree.postOrder" x="765" y="90">
+    <Class name="com.xd.bitree.inOrder" x="766" y="161">
         <AttributesDisplayFilter public-accepted="true"
             private-accepted="true" protected-accepted="true"
             default-accepted="true" static-accepted="false"/>
@@ -19,6 +29,15 @@
             default-accepted="false" static-accepted="false"
             accessors-accepted="false" constructors-accepted="false"/>
         <Extension destinationClassName="com.xd.bitree.Traverse"/>
+    </Class>
+    <Class name="com.xd.bitree.Traverse" x="394" y="75">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
     </Class>
     <Class name="com.xd.bitree.BiTreeNode" x="61" y="82">
         <AttributesDisplayFilter public-accepted="true"
@@ -31,25 +50,6 @@
         <Association destinationClassName="com.xd.bitree.BiTreeNode"
             endpointName="left" kind="Simple"/>
     </Class>
-    <Class name="com.xd.bitree.Traverse" x="508" y="76">
-        <AttributesDisplayFilter public-accepted="true"
-            private-accepted="true" protected-accepted="true"
-            default-accepted="true" static-accepted="false"/>
-        <MethodDisplayFilter public-accepted="true"
-            private-accepted="false" protected-accepted="false"
-            default-accepted="false" static-accepted="false"
-            accessors-accepted="false" constructors-accepted="false"/>
-    </Class>
-    <Class name="com.xd.bitree.inOrder" x="766" y="161">
-        <AttributesDisplayFilter public-accepted="true"
-            private-accepted="true" protected-accepted="true"
-            default-accepted="true" static-accepted="false"/>
-        <MethodDisplayFilter public-accepted="true"
-            private-accepted="false" protected-accepted="false"
-            default-accepted="false" static-accepted="false"
-            accessors-accepted="false" constructors-accepted="false"/>
-        <Extension destinationClassName="com.xd.bitree.Traverse"/>
-    </Class>
     <Class name="com.xd.bitree.preOrder" x="767" y="234">
         <AttributesDisplayFilter public-accepted="true"
             private-accepted="true" protected-accepted="true"
@@ -60,7 +60,7 @@
             accessors-accepted="false" constructors-accepted="false"/>
         <Extension destinationClassName="com.xd.bitree.Traverse"/>
     </Class>
-    <Class name="com.xd.bitree.BiTree" x="269" y="84">
+    <Class name="com.xd.bitree.BiTree" x="219" y="82">
         <AttributesDisplayFilter public-accepted="true"
             private-accepted="true" protected-accepted="true"
             default-accepted="true" static-accepted="false"/>
@@ -68,10 +68,10 @@
             private-accepted="false" protected-accepted="false"
             default-accepted="false" static-accepted="false"
             accessors-accepted="false" constructors-accepted="false"/>
-        <Association destinationClassName="com.xd.bitree.BiTreeNode"
-            endpointName="rootBiTreeNode" kind="Simple"/>
         <Association destinationClassName="com.xd.bitree.Traverse"
             endpointName="tr" kind="Simple"/>
+        <Association destinationClassName="com.xd.bitree.BiTreeNode"
+            endpointName="rootBiTreeNode" kind="Simple"/>
         <Communication destinationClassName="com.xd.bitree.Traverse"/>
     </Class>
 </ClassDiagram>

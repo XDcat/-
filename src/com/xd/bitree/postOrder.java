@@ -6,7 +6,7 @@ public class postOrder implements Traverse {
 		if (T != null){
 			traverse(T.left);
 			traverse(T.right);
-			System.out.println(T.data);
+			System.out.print(T.data);
 		}
 	}
 

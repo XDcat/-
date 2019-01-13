@@ -3,7 +3,7 @@ package com.xd.iList;
 import java.util.Scanner;
 
 public class LinkList implements IList{
-	protected Node head;
+	public Node head;
 	// 构造方法
 	public LinkList(){
 		this.head = new Node();

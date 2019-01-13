@@ -10,7 +10,7 @@ public class preOrderNonRecursion implements Traverse{
 		st.push(null);
 		while (T != null){
 			while (T != null){
-				System.out.println(T.data);
+				System.out.print(T.data);
 				if (T.right != null)
 					st.push(T.right);
 				T = T.left;

@@ -5,7 +5,7 @@ public class inOrder implements Traverse {
 	public void traverse(BiTreeNode T) {
 		if (T != null){
 			traverse(T.left);
-			System.out.println(T.data);
+			System.out.print(T.data);
 			traverse(T.right);
 		}
 	}
